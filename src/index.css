@@ -1,0 +1,23 @@
+/* Ensure full height for the body and html elements */
+html, body {
+  height: 100%;
+  margin: 0;
+  
+ 
+}
+
+.main-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  min-height: 100vh;       /* Full viewport height */
+  text-align: center;      /* Center text alignment */
+}
+
+/* Optional: Center content inside #root if needed */
+#root {
+  width: 100%;
+  max-width: 1200px;
+  
+   /* Adjust as needed */
+}

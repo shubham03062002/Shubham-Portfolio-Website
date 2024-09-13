@@ -1,0 +1,112 @@
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Navbar styling */
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  margin-right: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+  color: black; /* Default color */
+}
+
+/* Underline effect on hover */
+.navbar-nav .nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Positioning the underline below the text */
+  width: 100%;
+  height: 2px;
+  background-color: #d92cf9; /* Match the color of the "Shubham" brand */
+  transition: width 0.3s ease;
+}
+
+/* Ensure underline appears only on hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #d92cf9;
+  transition: width 0.3s ease;
+}
+
+/* Active tab styling */
+.navbar-nav .nav-link.active {
+  color: #d92cf9; /* Purple color for active tab */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%; /* Full-width underline for active tab */
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  display: inline-block;
+  color: #d92cf9;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.new {
+  background-color: #e7e7e7;
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  z-index: 1000;
+  top: 0; /* Ensures the navbar stays at the top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Add padding to the top of the body to avoid the navbar overlapping the content */
+body {
+  padding-top: 80px; /* Adjust based on the height of your navbar */
+}
+
+/* Add some responsiveness for smaller screens */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .navbar-collapse {
+    margin-left: 0 !important;
+  }
+
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* Navbar toggle button styles */
+.navbar-toggler {
+  border: none; /* Remove border from the toggle button */
+  background: transparent; /* Ensure background is transparent */
+}
+
+.navbar-toggler .fa-bars,
+.navbar-toggler .fa-times {
+  font-size: 24px; /* Adjust the size of the icons */
+  color: #d92cf9; /* Match the color of the brand */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none; /* Remove the focus outline */
+}
+
+/* Ensure the collapse behavior works with Bootstrap */
+.navbar-collapse.collapse {
+  display: none;
+}
+
+.navbar-collapse.show {
+  display: block;
+}
