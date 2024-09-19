@@ -44,11 +44,9 @@ const Home = () => {
       </Bounce>
 
       <Fade direction="up" triggerOnce={true} delay={1000}>
-        <button className={Styles.resumeButton}>
-          <a href="./documents/shubham aswale - resume-1.pdf" download>
-            Download Resume
-          </a>
-        </button>
+        <a href="/Shubham_Resume.pdf" download="Shubham_Resume.pdf">
+          <button className={Styles.resumeButton}>Download Resume</button>
+        </a>
       </Fade>
     </section>
   );
