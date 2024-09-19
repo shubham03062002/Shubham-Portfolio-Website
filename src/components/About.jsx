@@ -40,6 +40,7 @@ const About = () => {
             marginLeft: "120px",
             marginRight: "20px",
           }}
+          className={Styles.about}
         >
           <motion.div
             style={{

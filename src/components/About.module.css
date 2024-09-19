@@ -65,13 +65,25 @@ h3 {
     width: 200px;
     height: 200px;
   }
+  .about{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-right: 20px;
+    flex-direction: column-reverse;
+  }
 
   .para {
     font-size: 14px;
+    margin-top: 30px;
+    width: 70vw;
   }
 
   .detail {
     font-size: 12px;
+    width: 70vw;
+    width: 70vw;
   }
 
   .single-about-add-info h3 {
