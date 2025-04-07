@@ -30,6 +30,25 @@ const Projects = () => {
                 }}
               >
                 <a
+                  href="https://book-heaven-app.vercel.app/"
+                  style={{ textDecoration: "none" }}
+                >
+                  Book Heaven
+                </a>
+              </h3>
+              <p style={{ fontSize: "1rem", color: "#333" }}>
+                A full-stack book e-commerce web application built using React, Express, MongoDB, and Node.js. Utilizes Bootstrap for responsive design and includes features like book browsing, user authentication, cart management, and order tracking.
+              </p>
+            </li>
+            <li className="animate__animated animate__fadeInUp">
+              <h3
+                style={{
+                  fontSize: "1.6rem",
+                  fontWeight: "bold",
+                  color: "#007bff",
+                }}
+              >
+                <a
                   href="https://github.com/shubham03062002/Ecommerce-MERN-App"
                   style={{ textDecoration: "none" }}
                 >
@@ -118,7 +137,6 @@ const Projects = () => {
                   href="https://github.com/shubham03062002/Amazone-Shopping-App-Clone"
                   style={{ textDecoration: "none" }}
                 >
-                  {" "}
                   Amazon Clone
                 </a>
               </h3>
